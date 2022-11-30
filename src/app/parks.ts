@@ -12,7 +12,7 @@ export const parks = [
   },
   {
     id: 2,
-    name: 'Phone Mini',
+    name: 'Vito Locascio Field',
     address: 'North Conduit Avenue',
     city: 'Ozone Park',
     state: 'NY',
@@ -23,7 +23,7 @@ export const parks = [
   },
   {
     id: 3,
-    name: 'Phone Standard',
+    name: 'Ampere Playground',
     address: '82nd Street',
     city: 'Ozone Park',
     state: 'NY',
