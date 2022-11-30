@@ -1,20 +1,35 @@
 export const parks = [
   {
     id: 1,
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens'
+    name: 'Centreville Playground',
+    address: 'Centreville St',
+    city: 'Ozone Park',
+    state: 'NY',
+    zip_code: 11417,
+    description: 'very clean',
+    image_url: 'https://et710.com/website/jm/ozoneparkimages/parks1.jpg',
+    phone: '(212)639-9675',
   },
   {
     id: 2,
     name: 'Phone Mini',
-    price: 699,
-    description: 'A great phone with one of the best cameras'
+    address: 'North Conduit Avenue',
+    city: 'Ozone Park',
+    state: 'NY',
+    zip_code: 11417,
+    description: 'very clean',
+    image_url: 'https://et710.com/website/jm/ozoneparkimages/parks2.jpg',
+    phone: '(212)639-9675',
   },
   {
     id: 3,
     name: 'Phone Standard',
-    price: 299,
-    description: ''
-  }
+    address: '82nd Street',
+    city: 'Ozone Park',
+    state: 'NY',
+    zip_code: 11417,
+    description: 'very clean',
+    image_url: 'https://et710.com/website/jm/ozoneparkimages/parks3.jpg',
+    phone: '(212)639-9675',
+  },
 ];
