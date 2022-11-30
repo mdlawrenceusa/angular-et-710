@@ -23,7 +23,7 @@ export const parks = [
   },
   {
     id: 3,
-    name: 'Ampere Playground',
+    name: 'Ampere Playground ',
     address: '82nd Street',
     city: 'Ozone Park',
     state: 'NY',
