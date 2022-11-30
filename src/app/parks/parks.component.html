@@ -2,7 +2,6 @@
   <h2 class="landmark">Public Parks in Ozone Park</h2>
 
   <div *ngFor="let park of parks">
-    <p *ngIf="park.description">Top Review: {{ park.description }}</p>
     <div class="w3-card-4" style="width:100%">
       <img
         src="{{ park.image_url }}"
