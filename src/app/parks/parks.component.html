@@ -1,19 +1,100 @@
 <div *ngFor="let product of products">
+  <h3>
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+  </h3>
 
-<h3>
-  <a [title]="product.name + ' details'">
-    {{ product.name }}
-  </a>
-</h3>
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
 
-<p *ngIf="product.description">
-  Description: {{ product.description }}
-</p>
+  <button type="button" (click)="share()">Share</button>
 
+  <div class="landmarkblock parkblock">
+    <h3>Vito Locascio Field</h3>
+    <img
+      src="https://et710.com/website/jm/ozoneparkimages/parks2.jpg"
+      alt="hall"
+      width="350px"
+      class="parkimg"
+    />
+    <p>Top Review: "great place for food and atmosphere"</p>
+    <p>Phone: (212) 639-9675</p>
+    <p>
+      <b>Address:</b><br />N Conduit Ave<br />
+      Ozone Park<br />NY 11417
+    </p>
+  </div>
+</div>
 
-<button type="button" (click)="share()">
-  Share
-</button>
+<h2 class="landmark">Public Parks in Ozone Park</h2>
 
+<div class="landmarkblock parkblock">
+  <h3>Centreville Playground</h3>
+  <img
+    src="https://et710.com/website/jm/ozoneparkimages/parks1.jpg"
+    alt="reservior"
+    width="350px"
+    class="parkimg"
+  />
+  <p>Top Review:"very clean"</p>
+  <p>Phone: (212) 639-9675</p>
+  <p>
+    <b>Address:</b><br />Centreville St<br />
+    Ozone Park<br />Robinson Pkwy <br />NY 11417
+  </p>
+</div>
 
+<div class="landmarkblock parkblock">
+  <h3>Vito Locascio Field</h3>
+  <img
+    src="https://et710.com/website/jm/ozoneparkimages/parks2.jpg"
+    alt="hall"
+    width="350px"
+    class="parkimg"
+  />
+  <p>Top Review: "great place for food and atmosphere"</p>
+  <p>Phone: (212) 639-9675</p>
+  <p>
+    <b>Address:</b><br />N Conduit Ave<br />
+    Ozone Park<br />NY 11417
+  </p>
+</div>
+
+<div class="landmarkblock parkblock">
+  <h3>Ampere Playground</h3>
+  <img
+    src="https://et710.com/website/jm/ozoneparkimages/parks3.jpg"
+    alt="expwy"
+    width="350px"
+    class="parkimg"
+  />
+  <p>Top Review: "nice clean environment to bring your kids and family"</p>
+  <p>Phone: (212) 639-9675</p>
+  <p><b>Address:</b><br />82nd St.<br />Ozone Park <br />NY 11416</p>
+</div>
+<div class="landmarkblock parkblock">
+  <h3>Corporal Ruoff Square</h3>
+  <img
+    src="https://et710.com/website/jm/ozoneparkimages/park4.jpg"
+    alt="hall"
+    width="350px"
+    class="parkimg"
+  />
+  <p>Top Review: N/A</p>
+  <p>Phone: (212) 639-9675</p>
+  <p>
+    <b>Address:</b><br />94-11 Rockaway Blvd.<br />Ozone Park <br />NY 11417
+  </p>
+</div>
+<div class="landmarkblock parkblock">
+  <h3>Tudor Park</h3>
+  <img
+    src="https://et710.com/website/jm/ozoneparkimages/park5.jpg"
+    alt="expwy"
+    width="350px"
+    class="parkimg"
+  />
+  <p>Top Review: "always clean, nice people"</p>
+  <p>Phone: (212) 639-9675</p>
+  <p><b>Address:</b><br />82nd St. & 133rd Ave<br />Ozone Park<br />NY 11417</p>
 </div>

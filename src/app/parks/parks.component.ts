@@ -12,6 +12,8 @@ export class ParksComponent {
 
   products = products;
 
+  image_path = "https://et710.com/website/jm/";
+
   share() {
     window.alert('The product has been shared with ET-710!');
   }
