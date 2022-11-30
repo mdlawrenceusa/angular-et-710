@@ -1,23 +1,30 @@
-<h2 class="landmark">Public Parks in Ozone Park</h2>
+<div class="w3-container">
+  <h2 class="landmark">Public Parks in Ozone Park</h2>
 
-<div *ngFor="let park of parks">
-  <p *ngIf="park.description">Top Review: {{ park.description }}</p>
-
-  <div class="landmarkblock parkblock">
-    <h3>
-      <a [title]="park.name + ' details'">
-        {{ park.name }}
-      </a>
-    </h3>
-
-    <img src="{{ park.image_url }}" alt="park" width="350px" class="parkimg" />
-    <p>Top Review: {{ park.description }}</p>
-    <p>Phone: {{ park.phone }}</p>
-    <p>
-      <b>Address:</b><br />
-      {{ park.address }} <br />
-      {{ park.city }} <br />
-      {{ park.state }} {{ park.zip_code }}
-    </p>
+  <div *ngFor="let park of parks">
+    <p *ngIf="park.description">Top Review: {{ park.description }}</p>
+    <div class="w3-card-4" style="width:100%">
+      <img
+        src="{{ park.image_url }}"
+        alt="park"
+        width="350px"
+        class="parkimg"
+      />
+      <div class="w3-container w3-center">
+        <h3>
+          <a [title]="park.name + ' details'">
+            {{ park.name }}
+          </a>
+        </h3>
+        <p>Top Review: {{ park.description }}</p>
+        <p>Phone: {{ park.phone }}</p>
+        <p>
+          <b>Address:</b><br />
+          {{ park.address }} <br />
+          {{ park.city }} <br />
+          {{ park.state }} {{ park.zip_code }}
+        </p>
+      </div>
+    </div>
   </div>
 </div>
