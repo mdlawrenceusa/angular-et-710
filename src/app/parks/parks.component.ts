@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { products } from '../products';
+import { parks } from '../parks';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { products } from '../products';
 })
 export class ParksComponent {
 
-  products = products;
+  parks = parks;
 
   image_path = "https://et710.com/website/jm/";
 
